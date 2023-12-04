@@ -1,3 +1,24 @@
 h1{
     color: blue;
 }
+
+nav{
+    background-color: grey;
+    padding: 10px;
+    gap: 2em;
+    }
+ 
+a{
+    text-shadow: 3px 3px 5px black;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 21px;
+}   
+a:hover{
+    color: blue;
+} 
+.flexbox{
+    display: flex;
+    justify-content: flex-end;
+}
