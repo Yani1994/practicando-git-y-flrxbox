@@ -7,8 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Aprendiendo flexbox</h1> 
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laudantium!</p>
-</body>
-</html>
+      <h1>Formulario</h1>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+    
+        <div class="form-group">
+          <label for="pais">País:</label>
+          <select id="pais" name="pais" required>
+            <option value="" disabled selected hidden>Selecciona un país</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="mexico">México</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <label for="sexo">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="" disabled selected hidden>Selecciona el sexo</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </body>
+    </html>
