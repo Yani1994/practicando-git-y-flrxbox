@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 
-      <h1>Formulario</h1>
-      <form>
+      <h1 class="text-black-400 text-3xl">Formulario</h1>
+     
+      <form id="my-element" class="shadow-2xl">
         <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
@@ -53,5 +59,20 @@
     
         <button type="submit">Enviar</button>
       </form>
+      <script>
+
+        const element = document.querySelector('#my-element');
+        element.addEventListener("mouseover", (event) => {
+          element.classList.add('animate__animated', 'animate__bounce');
+        });
+        element.addEventListener("mouseout", (event) => {
+          element.classList.remove('animate__animated', 'animate__bounce');
+        });
+
+        
+
+
+
+      </script>
     </body>
     </html>
